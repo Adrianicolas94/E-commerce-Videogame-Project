@@ -1,0 +1,120 @@
+.productPage{
+   padding: 5.625rem 0;
+    background-color:rgb(37, 1, 87);
+  
+
+}
+
+.gamesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 16rem );
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 3rem;
+    column-gap: 3.5rem;
+    
+    
+}
+
+.searchButtons{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, 10rem ) ;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    border-radius: 10px;
+    border: none;
+    height:100px;
+    width: 150px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: azure;
+    transition: transform 0.2s ease-in-out;
+    -webkit-box-shadow: 15px 15px 28px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 15px 28px -20px rgba(0,0,0,0.75);
+    box-shadow: 15px 15px 28px -20px rgba(0,0,0,0.75);
+    cursor: pointer;    
+}
+
+.btn:hover{
+    color:rgb(114, 114, 114) ;
+    transform: scale(1.04) translateY(-0.1rem);
+
+}
+
+.btn-all {
+    font-size: 1.3rem;
+    color: rgb(77, 77, 77);
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    padding-top: 2rem; 
+}
+
+.inputBar{
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    background-color:rgb(86, 38, 152);
+    color: white;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.inputBar::placeholder {
+    
+    color: rgba(185, 185, 185, 0.431);
+}
+
+
+@media only screen and (max-width: 750px)  {
+.inputBar{
+    width: 200px;
+    
+}
+.searchBar{
+    padding-bottom: 0;
+    
+}
+.searchButtons{
+    grid-template-columns:  repeat(auto-fit,6rem ) ;
+    place-items: center;
+    gap: 1rem;
+    margin-top: -2.5rem;
+   
+}
+.btn {
+    width: 60px;
+    height: 60px;
+}
+
+.btn > img {
+    width: 45px;
+}
+
+.btn-nintendo > img {
+        
+    width:35px;
+
+}
+.btn-xbox > img {
+        
+    width:35px;
+
+}
+
+.btn-all {
+    font-size: 0.6rem;
+}
+
+
+}
